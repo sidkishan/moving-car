@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  background-color: paleturquoise;
+}
+.box {
+  /* border: 2px dashed white; */
+  background-color: paleturquoise;
+  position: relative;
+  width: 100px;
+  top: 200px;
+  animation: movecar 3s infinite linear;
+}
+#car {
+  width: 600px;
+  position: relative;
+}
+.wheel {
+  width: 110px;
+  border-radius: 80px;
+  position: absolute;
+  transform-origin: 50%;
+  animation: rotate 700ms infinite linear;
+}
+.wheel1 {
+  top: 130px;
+  left: 419px;
+}
+.wheel2 {
+  top: 130px;
+  left: 52px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes movecar {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 950px;
+  }
+}
+.border {
+  padding-bottom: 200px;
+  border-bottom: 4px dashed black;
+}
